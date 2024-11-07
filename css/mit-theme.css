@@ -424,20 +424,52 @@ button[type="submit"].btn-primary:hover {
 
 /* Footer text styles */
 .container-fluid.bg-secondary p,
+.container-fluid.bg-secondary .text-white,
 .container-fluid.bg-secondary .text-center {
-    color: #8B0000 !important;
+    color: #6B0000 !important;  /* Darker red */
 }
 
-/* Footer links should remain clickable and visible */
-.container-fluid.bg-secondary a {
-    color: #6B0000 !important;  /* Even darker for links */
+/* Footer links */
+.container-fluid.bg-secondary a:not(.btn) {
+    color: #8B0000 !important;  /* Dark red for links */
 }
 
-.container-fluid.bg-secondary a:hover {
-    color: #8B0000 !important;
+.container-fluid.bg-secondary a:hover:not(.btn) {
+    color: #6B0000 !important;  /* Even darker on hover */
 }
 
 /* Keep the existing footer background */
 .container-fluid.bg-secondary {
     background-color: #E5E5E5 !important;
+}
+
+/* Ensure Quick Links text is visible */
+.container-fluid.bg-secondary .text-white.mb-2 {
+    color: #6B0000 !important;
+}
+
+/* Footer text styles */
+.container-fluid.bg-secondary p,
+.container-fluid.bg-secondary .text-white {
+    color: #8B0000 !important;  /* Darker red */
+}
+
+/* Footer links */
+.container-fluid.bg-secondary a:not(.btn):not(.text-primary) {
+    color: #8B0000 !important;  /* Darker red */
+}
+
+.container-fluid.bg-secondary a:hover:not(.btn):not(.text-primary) {
+    color: #6B0000 !important;  /* Even darker on hover */
+}
+
+/* Quick Links text */
+.container-fluid.bg-secondary .text-white.mb-2,
+.container-fluid.bg-secondary .text-white {
+    color: #8B0000 !important;  /* Darker red */
+}
+
+/* Copyright text */
+.container-fluid.bg-secondary .m-0.text-center.text-white {
+    color: #8B0000 !important;  /* Darker red */
 }
