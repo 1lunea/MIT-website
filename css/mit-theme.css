@@ -1,15 +1,15 @@
 :root {
-  /* Base colors */
-  --blue: #A31F34;         /* MIT Red as primary */
-  --indigo: #8A8B8C;       /* MIT Gray */
-  --purple: #6A6A6A;       /* Darker gray */
-  --pink: #C2C0BF;         /* Light gray */
+  /* Base colors - removing all blues */
+  --blue: #A31F34;         /* MIT Red instead of blue */
+  --indigo: #8A8B8C;       /* MIT Gray instead of indigo */
+  --purple: #6A6A6A;       /* Darker gray instead of purple */
+  --pink: #C2C0BF;         /* Light gray instead of pink */
   --red: #A31F34;          /* MIT Red */
   --orange: #FF8A00;       /* MIT Orange */
   --yellow: #FFC200;       /* MIT Yellow */
   --green: #4B8F3F;        /* MIT Green */
-  --teal: #008F96;         /* MIT Teal */
-  --cyan: #0066FF;         /* MIT Blue */
+  --teal: #A31F34;         /* MIT Red instead of teal */
+  --cyan: #A31F34;         /* MIT Red instead of cyan */
   --white: #fff;
   --gray: #8A8B8C;         /* MIT Gray */
   --gray-dark: #333333;    /* MIT Dark Gray */
@@ -18,7 +18,7 @@
   --primary: #A31F34;      /* MIT Red */
   --secondary: #8A8B8C;    /* MIT Gray */
   --success: #4B8F3F;      /* MIT Green */
-  --info: #0066FF;         /* MIT Blue */
+  --info: #8A8B8C;         /* MIT Gray instead of blue */
   --warning: #FFC200;      /* MIT Yellow */
   --danger: #A31F34;       /* MIT Red */
   --light: #F9F9F9;        /* Light background */
@@ -62,4 +62,67 @@ a:hover {
 .btn-secondary:hover {
   background-color: #6A6A6A;
   border-color: #6A6A6A;
-} 
+}
+
+/* Additional overrides for common Bootstrap classes */
+.text-primary {
+  color: #A31F34 !important;
+}
+
+.text-info {
+  color: #8A8B8C !important;
+}
+
+.bg-primary {
+  background-color: #A31F34 !important;
+}
+
+.bg-info {
+  background-color: #8A8B8C !important;
+}
+
+/* Link colors */
+a {
+  color: #A31F34;
+}
+
+a:hover {
+  color: #8A1B2C;
+}
+
+/* Focus states */
+.btn:focus, 
+.btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(163, 31, 52, 0.25); /* MIT Red with opacity */
+}
+
+/* Form focus states */
+.form-control:focus {
+  border-color: #A31F34;
+  box-shadow: 0 0 0 0.2rem rgba(163, 31, 52, 0.25);
+}
+
+/* Pagination */
+.page-link {
+  color: #A31F34;
+}
+
+.page-link:hover {
+  color: #8A1B2C;
+}
+
+.page-item.active .page-link {
+  background-color: #A31F34;
+  border-color: #A31F34;
+}
+
+/* List groups */
+.list-group-item.active {
+  background-color: #A31F34;
+  border-color: #A31F34;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: #A31F34;
+}
