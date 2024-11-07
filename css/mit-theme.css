@@ -1,0 +1,18 @@
+:root {
+  --primary: #A31F34;      /* MIT Red */
+  --secondary: #8A8B8C;    /* MIT Gray */
+  --info: #333333;         /* Dark gray */
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #A31F34;
+}
+
+a {
+  color: #A31F34;
+}
+
+a:hover {
+  color: #8A1B2C;
+} 
