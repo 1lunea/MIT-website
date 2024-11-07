@@ -791,8 +791,8 @@ button[type="submit"].btn-primary:hover {
 }
 
 .card-text {
-    height: 80px;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -956,6 +956,15 @@ button[type="submit"].btn-primary:hover {
     font-size: 14px;
     padding: 8px 16px;
     border-radius: 20px;
+    background-color: #A31F34 !important;  /* MIT's primary red color */
+    color: white !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.research-overlay .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .research-content {
