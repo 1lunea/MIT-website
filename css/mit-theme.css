@@ -21,6 +21,12 @@
   --danger: #A31F34;
   --light: #F9F9F9;
   --dark: #333333;
+
+  /* Standardized Animation Settings */
+  --animation-timing: 0.8s;
+  --hover-timing: 0.3s;
+  --fade-timing: 0.6s;
+  --animation-delay-base: 0.2s;
 }
 
 /* Background colors */
@@ -472,4 +478,406 @@ button[type="submit"].btn-primary:hover {
 /* Copyright text */
 .container-fluid.bg-secondary .m-0.text-center.text-white {
     color: #8B0000 !important;  /* Darker red */
+}
+
+/* Interactive Elements */
+
+/* Card Hover Effects */
+.card {
+    transition: all var(--hover-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Animated Elements */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--animation-timing) cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form Field Effects */
+.form-control {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-color: rgba(139, 0, 0, 0.05);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #8B0000;
+    background-color: rgba(139, 0, 0, 0.1);
+}
+
+/* Button Hover Effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all var(--hover-timing) ease;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(255,255,255,0.2);
+    transition: all var(--hover-timing) ease;
+}
+
+/* Navigation Hover Effects */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #8B0000;
+    transition: all var(--hover-timing) ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Image Hover Effects */
+.hover-zoom {
+    overflow: hidden;
+    transition: transform var(--hover-timing) ease;
+}
+
+.hover-zoom img {
+    transition: transform var(--hover-timing) ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Social Media Icons */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) rotate(8deg);
+}
+
+/* Loading Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp var(--fade-timing) ease forwards;
+}
+
+/* Staggered Animation Classes */
+.stagger-animation > * {
+    opacity: 0;
+    animation: fadeInUp var(--fade-timing) ease forwards;
+}
+
+.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* Header Styling */
+.container-fluid.bg-primary {
+    position: relative;
+    min-height: 600px; /* Increased from 400px */
+    background: linear-gradient(rgba(163, 31, 52, 0.9), rgba(163, 31, 52, 0.9)), 
+                url('../img/mit-background.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Header Content Styling */
+.container-fluid.bg-primary .d-flex {
+    min-height: 600px; /* Match container height */
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Text Styling */
+.container-fluid.bg-primary .display-3 {
+    font-size: 4.5rem; /* Larger title */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Breadcrumb Styling */
+.container-fluid.bg-primary .d-inline-flex {
+    font-size: 1.2rem; /* Larger breadcrumb text */
+    margin-top: 1rem;
+}
+
+/* Animation for header content */
+.container-fluid.bg-primary .stagger-animation > * {
+    animation-duration: var(--animation-timing);
+    animation-fill-mode: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid.bg-primary,
+    .container-fluid.bg-primary .d-flex {
+        min-height: 450px; /* Slightly smaller on mobile */
+    }
+    
+    .container-fluid.bg-primary .display-3 {
+        font-size: 3rem;
+    }
+    
+    .container-fluid.bg-primary .d-inline-flex {
+        font-size: 1rem;
+    }
+}
+
+/* Optional: Add a subtle parallax effect */
+.container-fluid.bg-primary {
+    background-attachment: fixed;
+}
+
+/* Optional: Add an overlay animation */
+.container-fluid.bg-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+                rgba(163, 31, 52, 0.8), 
+                rgba(163, 31, 52, 0.6));
+    animation: headerGlow 8s infinite alternate;
+}
+
+@keyframes headerGlow {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+/* Animation Settings */
+:root {
+    --animation-timing: 0.8s;
+    --animation-delay-base: 0.2s;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--animation-timing) cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header specific animations */
+.container-fluid.bg-primary .animate-on-scroll {
+    transform: translateY(50px);
+    transition-duration: 1s;
+}
+
+.container-fluid.bg-primary .animate-on-scroll.animated {
+    transform: translateY(0);
+}
+
+/* Card animations with sequential timing */
+.card.animate-on-scroll {
+    transition-duration: 0.6s;
+}
+
+/* Hover effects */
+.hover-zoom {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Optional: Add loading animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp var(--animation-timing) ease forwards;
+}
+
+/* Section Title Styling */
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #A31F34 !important; /* MIT red */
+}
+
+.section-title::before,
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #A31F34 !important; /* MIT red */
+}
+
+.section-title::before {
+    left: -60px;
+}
+
+.section-title::after {
+    right: -60px;
+}
+
+/* Card Styling */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1 0 auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.card-footer {
+    margin-top: auto;
+}
+
+/* Animation for cards */
+.animate-on-scroll {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate-on-scroll:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar Styling */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #343a40 !important;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    padding: 10px 15px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #A31F34 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #A31F34;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 20px 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* Sticky Navbar */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
