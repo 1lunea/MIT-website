@@ -891,3 +891,169 @@ button[type="submit"].btn-primary:hover {
         transform: translateY(0);
     }
 }
+
+/* Research Cards Styling */
+.card {
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.research-stats {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 15px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.stat span {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Research Timeline Styling */
+.research-item {
+    position: relative;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+}
+
+.research-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.research-overlay .badge {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.research-content {
+    padding: 20px;
+}
+
+.research-content h4 {
+    color: #17a2b8;
+    margin-bottom: 15px;
+}
+
+.research-stats {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat i {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.stat span {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Animation for research items */
+.research-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.research-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.research-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Testimonial Styling */
+.testimonial-item {
+    position: relative;
+}
+
+.testimonial-item .fa-quote-left {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.testimonial-item img {
+    border: 2px solid #17a2b8;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover img {
+    transform: scale(1.1);
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dddddd;
+    transition: all 0.3s ease;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 24px;
+    border-radius: 6px;
+    background: #17a2b8;
+}
+
+.testimonial-item .bg-light {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover .bg-light {
+    transform: translateY(-5px);
+}
