@@ -1,7 +1,43 @@
 :root {
+  /* Base colors */
+  --blue: #A31F34;         /* MIT Red as primary */
+  --indigo: #8A8B8C;       /* MIT Gray */
+  --purple: #6A6A6A;       /* Darker gray */
+  --pink: #C2C0BF;         /* Light gray */
+  --red: #A31F34;          /* MIT Red */
+  --orange: #FF8A00;       /* MIT Orange */
+  --yellow: #FFC200;       /* MIT Yellow */
+  --green: #4B8F3F;        /* MIT Green */
+  --teal: #008F96;         /* MIT Teal */
+  --cyan: #0066FF;         /* MIT Blue */
+  --white: #fff;
+  --gray: #8A8B8C;         /* MIT Gray */
+  --gray-dark: #333333;    /* MIT Dark Gray */
+
+  /* Theme colors */
   --primary: #A31F34;      /* MIT Red */
   --secondary: #8A8B8C;    /* MIT Gray */
-  --info: #333333;         /* Dark gray */
+  --success: #4B8F3F;      /* MIT Green */
+  --info: #0066FF;         /* MIT Blue */
+  --warning: #FFC200;      /* MIT Yellow */
+  --danger: #A31F34;       /* MIT Red */
+  --light: #F9F9F9;        /* Light background */
+  --dark: #333333;         /* MIT Dark Gray */
+
+  /* Other Bootstrap variables */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Basic element overrides */
+body {
+  color: #333333;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -15,4 +51,15 @@ a {
 
 a:hover {
   color: #8A1B2C;
+}
+
+/* Button hover states */
+.btn-primary:hover {
+  background-color: #8A1B2C;
+  border-color: #8A1B2C;
+}
+
+.btn-secondary:hover {
+  background-color: #6A6A6A;
+  border-color: #6A6A6A;
 } 
