@@ -13,7 +13,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&family=Petit+Formal+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
       rel="stylesheet"
     />
 
@@ -79,15 +79,15 @@
       >
         <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
         <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
+          <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
           <p class="m-0 px-2">/</p>
-          <p class="m-0">Contact Us</p>
+          <p class="m-0">Contact</p>
         </div>
       </div>
     </div>
     <!-- Header End -->
 
-    <!-- Contact Start -->
+    <!-- Contact Info Start -->
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
@@ -97,60 +97,70 @@
           <h1 class="mb-4">Contact Us For Any Query</h1>
         </div>
         <div class="row">
+          <div class="col-lg-4 mb-5">
+            <div class="d-flex">
+              <i class="fa fa-map-marker-alt fa-2x text-primary flex-shrink-0 mr-3"></i>
+              <div class="mt-n1">
+                <h5>Campus Location</h5>
+                <p>77 Massachusetts Ave, Cambridge, MA 02139, United States</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="d-flex">
+              <i class="fa fa-envelope fa-2x text-primary flex-shrink-0 mr-3"></i>
+              <div class="mt-n1">
+                <h5>Email Us</h5>
+                <p>admissions@mit.edu</p>
+                <p>info@mit.edu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="d-flex">
+              <i class="fa fa-phone-alt fa-2x text-primary flex-shrink-0 mr-3"></i>
+              <div class="mt-n1">
+                <h5>Call Us</h5>
+                <p>+1 617-253-1000</p>
+                <p>+1 617-258-8600</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Info End -->
+
+    <!-- Contact Form Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-7 mb-5">
             <div class="contact-form">
               <div id="success"></div>
               <form name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name"
-                  />
+                  <input type="text" class="form-control" id="name" placeholder="Your Name"
+                    required="required" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Your Email"
-                    required="required"
-                    data-validation-required-message="Please enter your email"
-                  />
+                  <input type="email" class="form-control" id="email" placeholder="Your Email"
+                    required="required" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    placeholder="Subject"
-                    required="required"
-                    data-validation-required-message="Please enter a subject"
-                  />
+                  <input type="text" class="form-control" id="subject" placeholder="Subject"
+                    required="required" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <textarea
-                    class="form-control"
-                    rows="6"
-                    id="message"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter your message"
-                  ></textarea>
+                  <textarea class="form-control" rows="6" id="message" placeholder="Message"
+                    required="required"></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div>
-                  <button
-                    class="btn btn-primary py-2 px-4"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
+                  <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">
                     Send Message
                   </button>
                 </div>
@@ -158,58 +168,67 @@
             </div>
           </div>
           <div class="col-lg-5 mb-5">
-            <p>
-              Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et
-              kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna
-              elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est
-              eirmod eirmod amet.
-            </p>
-            <div class="d-flex">
-              <i
-                class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Address</h5>
-                <p>123 Street, New York, USA</p>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2856987724!2d-71.09469448429068!3d42.35977014400856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370aaf51a6a87%3A0xd0e08ea5b308203c!2sMassachusetts%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1647532722065!5m2!1sen!2sus"
+                style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form End -->
+
+    <!-- Department Info Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Department Contacts</span>
+          </p>
+          <h1 class="mb-4">Reach Our Departments</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Admissions Office</h4>
+                <p class="card-text">
+                  For prospective students and admission inquiries
+                  <br>Phone: +1 617-253-3400
+                  <br>Email: admissions@mit.edu
+                </p>
               </div>
             </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Email</h5>
-                <p>info@example.com</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Research Inquiries</h4>
+                <p class="card-text">
+                  For research collaboration and opportunities
+                  <br>Phone: +1 617-253-3500
+                  <br>Email: research@mit.edu
+                </p>
               </div>
             </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Phone</h5>
-                <p>+012 345 67890</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Opening Hours</h5>
-                <strong>Sunday - Friday:</strong>
-                <p class="m-0">08:00 AM - 05:00 PM</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Media Relations</h4>
+                <p class="card-text">
+                  For press and media inquiries
+                  <br>Phone: +1 617-253-2700
+                  <br>Email: media@mit.edu
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+    <!-- Department Info End -->
 
     <!-- Footer Start -->
     <div
@@ -223,7 +242,7 @@
             style="font-size: 40px; line-height: 40px"
           >
             <i class="flaticon-043-teddy-bear"></i>
-            <span class="text-white">KidKinder</span>
+            <span class="text-white">MIT</span>
           </a>
           <p>
             Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea

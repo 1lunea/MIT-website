@@ -536,9 +536,8 @@ button[type="submit"].btn-primary:hover {
     position: relative;
     display: inline-block;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #8B0000 !important;
-    padding: 0 15px;  /* Add padding around text */
+    font-family: 'Flaticon', cursive;
+    font-weight: bold;
 }
 
 /* Decorative lines */
@@ -598,7 +597,7 @@ a:hover {
 .fab,
 .far,
 .fas {
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 /* Adjust font sizes for better readability */
@@ -635,49 +634,49 @@ a:hover {
 /* Replace Font Awesome icons with Petit Formal Script text */
 .fa-angle-right:before {
     content: "→";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fa-map-marker-alt:before {
     content: "Location";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fa-envelope:before {
     content: "Email";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fa-phone-alt:before {
     content: "Phone";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 /* Social Media Icons */
 .fab.fa-twitter:before {
     content: "Twitter";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fab.fa-facebook-f:before {
     content: "Facebook";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fab.fa-linkedin-in:before {
     content: "LinkedIn";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 .fab.fa-instagram:before {
     content: "Instagram";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 /* Back to top button */
 .fa-angle-double-up:before {
     content: "Top";
-    font-family: 'Petit Formal Script', cursive !important;
+    font-family: 'Flaticon', cursive !important;
 }
 
 /* Adjust styling for the new text */
@@ -897,4 +896,34 @@ a:hover {
 
 .gallery-item:hover .gallery-overlay {
     opacity: 1;
+}
+
+/* Replace any existing Petit Formal Script references with Flaticon */
+@font-face {
+    font-family: 'Flaticon';
+    src: url('../lib/flaticon/font/Flaticon.eot');
+    src: url('../lib/flaticon/font/Flaticon.eot?#iefix') format('embedded-opentype'),
+         url('../lib/flaticon/font/Flaticon.woff2') format('woff2'),
+         url('../lib/flaticon/font/Flaticon.woff') format('woff'),
+         url('../lib/flaticon/font/Flaticon.ttf') format('truetype'),
+         url('../lib/flaticon/font/Flaticon.svg#Flaticon') format('svg');
+}
+
+/* Update any elements using Petit Formal Script */
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: 'Flaticon', cursive;
+    font-weight: bold;
+}
+
+.page-header h1,
+.site-heading {
+    font-family: 'Flaticon', cursive;
+}
+
+/* Any other elements that were using Petit Formal Script */
+.fancy-text {
+    font-family: 'Flaticon', cursive;
 }
