@@ -473,3 +473,428 @@ button[type="submit"].btn-primary:hover {
 .container-fluid.bg-secondary .m-0.text-center.text-white {
     color: #8B0000 !important;  /* Darker red */
 }
+
+/* Header container styles */
+.container-fluid.bg-primary.px-0.px-md-5.mb-5 {
+    min-height: 600px !important;  /* Increased from default */
+}
+
+/* Adjust content vertical alignment */
+.container-fluid.bg-primary.px-0.px-md-5.mb-5 .row {
+    min-height: 600px !important;
+    align-items: center;
+}
+
+/* Ensure image scales properly */
+.container-fluid.bg-primary.px-0.px-md-5.mb-5 .img-fluid {
+    max-height: 550px;  /* Leave some padding */
+    width: auto;
+}
+
+.team .team-social {
+    top: 0;
+    background: rgba(139, 0, 0, 0.8) !important;  /* Dark red with 80% opacity */
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+/* Hover state */
+.team:hover .team-social {
+    opacity: 1;
+}
+
+/* Optional: Update the social icons color for better contrast */
+.team .team-social a {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.team .team-social a:hover {
+    background-color: #ffffff !important;
+    color: #8B0000 !important;
+}
+
+/* Footer social icons */
+.container-fluid.bg-secondary .btn-outline-primary {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.container-fluid.bg-secondary .btn-outline-primary:hover {
+    background-color: #ffffff !important;
+    color: #8B0000 !important;
+}
+
+/* Ensure icons stay white */
+.container-fluid.bg-secondary .fab,
+.team .team-social .fab {
+    color: inherit !important;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8B0000 !important;
+    padding: 0 15px;  /* Add padding around text */
+}
+
+/* Decorative lines */
+.section-title::before,
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 50px;  /* Line length */
+    height: 2px;  /* Line thickness */
+    background: #8B0000 !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Left line */
+.section-title::before {
+    left: -55px;  /* Position left line */
+}
+
+/* Right line */
+.section-title::after {
+    right: -55px;  /* Position right line */
+}
+
+/* Base link styles */
+a {
+    color: #8B0000 !important;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Hover state */
+a:hover {
+    color: #6B0000 !important;
+    text-decoration: none;
+}
+
+/* Exception for buttons and special cases */
+.btn-primary a,
+.bg-primary a,
+.text-white a {
+    color: #ffffff !important;
+}
+
+/* Exception for footer links */
+.container-fluid.bg-secondary a {
+    color: #8B0000 !important;
+}
+
+.container-fluid.bg-secondary a:hover {
+    color: #6B0000 !important;
+}
+
+/* Base font styles */
+.fa,
+.fab,
+.far,
+.fas {
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+/* Adjust font sizes for better readability */
+.fa-angle-right,
+.fa-angle-double-up {
+    font-size: 1.2em;
+}
+
+/* Social media icons */
+.fab.fa-twitter,
+.fab.fa-facebook-f,
+.fab.fa-linkedin-in,
+.fab.fa-instagram {
+    font-size: 1.1em;
+}
+
+/* Contact icons */
+.fa-map-marker-alt,
+.fa-envelope,
+.fa-phone-alt,
+.fa-clock {
+    font-size: 1.3em;
+}
+
+/* Ensure proper vertical alignment */
+.fa,
+.fab,
+.far,
+.fas {
+    vertical-align: middle;
+    line-height: 1;
+}
+
+/* Replace Font Awesome icons with Petit Formal Script text */
+.fa-angle-right:before {
+    content: "→";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fa-map-marker-alt:before {
+    content: "Location";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fa-envelope:before {
+    content: "Email";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fa-phone-alt:before {
+    content: "Phone";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+/* Social Media Icons */
+.fab.fa-twitter:before {
+    content: "Twitter";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fab.fa-facebook-f:before {
+    content: "Facebook";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fab.fa-linkedin-in:before {
+    content: "LinkedIn";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+.fab.fa-instagram:before {
+    content: "Instagram";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+/* Back to top button */
+.fa-angle-double-up:before {
+    content: "Top";
+    font-family: 'Petit Formal Script', cursive !important;
+}
+
+/* Adjust styling for the new text */
+.fa, .fab, .far, .fas {
+    font-size: 16px;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Adjust social media buttons to accommodate text */
+.btn-outline-primary.rounded-circle {
+    width: auto !important;
+    min-width: 100px !important;
+    height: auto !important;
+    padding: 8px 15px !important;
+    border-radius: 20px !important;
+}
+
+/* Quick Links arrows */
+.text-white i.fa-angle-right {
+    margin-right: 10px;
+}
+
+/* Interactive Elements */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+}
+
+.btn:hover:after {
+    width: 200%;
+    height: 200%;
+}
+
+/* Animated elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About page specific styles */
+
+/* Timeline styling */
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 3px solid #17a2b8;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #17a2b8;
+    transform: translateY(-50%);
+}
+
+/* Skills section */
+.skill-bar {
+    height: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #17a2b8;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1.5s ease;
+    position: relative;
+}
+
+/* Achievement boxes */
+.achievement-box {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 200px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.achievement-box i {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 15px;
+}
+
+.achievement-box .achievement-counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #17a2b8;
+    margin: 10px 0;
+}
+
+.achievement-box p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #6c757d;
+}
+
+.achievement-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .achievement-box {
+        height: 180px;
+        margin-bottom: 15px;
+    }
+    
+    .achievement-box i {
+        font-size: 2rem;
+    }
+    
+    .achievement-box .achievement-counter {
+        font-size: 2rem;
+    }
+    
+    .achievement-box p {
+        font-size: 1rem;
+    }
+}
+
+/* Interactive image gallery */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 162, 184, 0.8);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
