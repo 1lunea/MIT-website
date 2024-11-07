@@ -1,128 +1,443 @@
 :root {
-  /* Base colors - removing all blues */
-  --blue: #A31F34;         /* MIT Red instead of blue */
-  --indigo: #8A8B8C;       /* MIT Gray instead of indigo */
-  --purple: #6A6A6A;       /* Darker gray instead of purple */
-  --pink: #C2C0BF;         /* Light gray instead of pink */
-  --red: #A31F34;          /* MIT Red */
-  --orange: #FF8A00;       /* MIT Orange */
-  --yellow: #FFC200;       /* MIT Yellow */
-  --green: #4B8F3F;        /* MIT Green */
-  --teal: #A31F34;         /* MIT Red instead of teal */
-  --cyan: #A31F34;         /* MIT Red instead of cyan */
+  /* Base colors */
+  --blue: #A31F34;
+  --indigo: #8A8B8C;
+  --purple: #6A6A6A;
+  --pink: #C2C0BF;
+  --red: #A31F34;
+  --orange: #FF8A00;
+  --yellow: #FFC200;
+  --green: #4B8F3F;
+  --teal: #A31F34;
+  --cyan: #A31F34;
   --white: #fff;
-  --gray: #8A8B8C;         /* MIT Gray */
-  --gray-dark: #333333;    /* MIT Dark Gray */
-
-  /* Theme colors */
-  --primary: #A31F34;      /* MIT Red */
-  --secondary: #8A8B8C;    /* MIT Gray */
-  --success: #4B8F3F;      /* MIT Green */
-  --info: #8A8B8C;         /* MIT Gray instead of blue */
-  --warning: #FFC200;      /* MIT Yellow */
-  --danger: #A31F34;       /* MIT Red */
-  --light: #F9F9F9;        /* Light background */
-  --dark: #333333;         /* MIT Dark Gray */
-
-  /* Other Bootstrap variables */
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --gray: #8A8B8C;
+  --gray-dark: #333333;
+  --primary: #A31F34;
+  --secondary: #8A8B8C;
+  --success: #4B8F3F;
+  --info: #8A8B8C;
+  --warning: #FFC200;
+  --danger: #A31F34;
+  --light: #F9F9F9;
+  --dark: #333333;
 }
 
-/* Basic element overrides */
-body {
-  color: #333333;
-  background-color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #A31F34;
-}
-
-a {
-  color: #A31F34;
-}
-
-a:hover {
-  color: #8A1B2C;
-}
-
-/* Button hover states */
-.btn-primary:hover {
-  background-color: #8A1B2C;
-  border-color: #8A1B2C;
-}
-
-.btn-secondary:hover {
-  background-color: #6A6A6A;
-  border-color: #6A6A6A;
-}
-
-/* Additional overrides for common Bootstrap classes */
-.text-primary {
-  color: #A31F34 !important;
-}
-
-.text-info {
-  color: #8A8B8C !important;
-}
-
-.bg-primary {
+/* Background colors */
+.bg-primary, 
+.btn-primary,
+.badge-primary,
+.nav-pills .nav-link.active {
   background-color: #A31F34 !important;
 }
 
-.bg-info {
-  background-color: #8A8B8C !important;
+/* Text colors */
+.text-primary,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.section-title::before,
+.section-title::after,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #A31F34 !important;
 }
 
-/* Link colors */
-a {
-  color: #A31F34;
-}
-
-a:hover {
-  color: #8A1B2C;
-}
-
-/* Focus states */
-.btn:focus, 
-.btn.focus {
-  box-shadow: 0 0 0 0.2rem rgba(163, 31, 52, 0.25); /* MIT Red with opacity */
-}
-
-/* Form focus states */
-.form-control:focus {
-  border-color: #A31F34;
-  box-shadow: 0 0 0 0.2rem rgba(163, 31, 52, 0.25);
-}
-
-/* Pagination */
-.page-link {
-  color: #A31F34;
-}
-
-.page-link:hover {
-  color: #8A1B2C;
-}
-
+/* Border colors */
+.border-primary,
+.form-control:focus,
+.btn-primary,
 .page-item.active .page-link {
+  border-color: #A31F34 !important;
+}
+
+/* Special elements */
+.section-title::before,
+.section-title::after {
+  background: #A31F34;
+}
+
+/* Footer specific */
+.container-fluid.bg-secondary {
+  background-color: #E5E5E5 !important;  /* Light gray */
+}
+
+.footer-social-icons a,
+.btn-outline-primary {
+  color: #A31F34 !important;
+  border-color: #A31F34 !important;
+}
+
+.footer-social-icons a:hover,
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #A31F34 !important;
+}
+
+/* Icon colors */
+.fa, 
+.fas, 
+.far, 
+.fab, 
+.flaticon {
+  color: #A31F34;
+}
+
+/* Service boxes */
+.service-item i,
+.service-icon i {
+  color: #A31F34 !important;
+}
+
+/* Team member cards */
+.team-item .team-social .btn:hover {
+  background-color: #A31F34 !important;
+}
+
+/* Testimonial */
+.testimonial-carousel .owl-dot.active {
+  background-color: #A31F34 !important;
+}
+
+/* Blog */
+.blog-item .blog-date {
+  background-color: #A31F34;
+}
+
+/* Contact form */
+.contact-form .form-control:focus {
+  border-color: #A31F34 !important;
+}
+
+/* Navbar specific */
+.navbar-light .navbar-brand {
+  color: #A31F34 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #A31F34 !important;
+}
+
+/* Override any remaining blue borders */
+[style*="border-color: rgb(23, 162, 184)"] {
+  border-color: #A31F34 !important;
+}
+
+/* Override any remaining blue backgrounds */
+[style*="background-color: rgb(23, 162, 184)"] {
+  background-color: #A31F34 !important;
+}
+
+/* Override any remaining blue colors */
+[style*="color: rgb(23, 162, 184)"] {
+  color: #A31F34 !important;
+}
+
+/* Override rgba values */
+[style*="rgba(23, 162, 184"] {
+  background-color: rgba(163, 31, 52, 0.2) !important;
+}
+
+/* Override specific elements */
+.back-to-top {
+  background-color: #A31F34;
+}
+
+.owl-carousel .owl-dot.active {
+  background-color: #A31F34 !important;
+}
+
+/* Fix any remaining bootstrap specific classes */
+.custom-control-input:checked ~ .custom-control-label::before {
   background-color: #A31F34;
   border-color: #A31F34;
 }
 
-/* List groups */
-.list-group-item.active {
+.dropdown-item.active, 
+.dropdown-item:active {
   background-color: #A31F34;
-  border-color: #A31F34;
 }
 
-/* Progress bars */
-.progress-bar {
-  background-color: #A31F34;
+/* Fix social media icons in footer */
+.btn-outline-primary.rounded-circle {
+  color: #A31F34 !important;
+  border-color: #A31F34 !important;
+}
+
+.btn-outline-primary.rounded-circle:hover {
+  background-color: #A31F34 !important;
+  color: #fff !important;
+}
+
+/* Fix any inline styles */
+[class*="text-primary"],
+[class*="bg-primary"],
+[class*="border-primary"] {
+  color: #A31F34 !important;
+  background-color: #A31F34 !important;
+  border-color: #A31F34 !important;
+}
+
+/* Text colors with transparent backgrounds */
+[class*="text-primary"],
+.text-primary,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.section-title::before,
+.section-title::after,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.fa, 
+.fas, 
+.far, 
+.fab, 
+.flaticon,
+.service-item i,
+.service-icon i {
+  color: #A31F34 !important;
+  background-color: transparent !important;
+}
+
+/* Only apply background color to elements that should have it */
+.bg-primary, 
+.btn-primary,
+.badge-primary,
+.nav-pills .nav-link.active,
+.back-to-top,
+.blog-item .blog-date,
+.dropdown-item.active, 
+.dropdown-item:active {
+  background-color: #A31F34 !important;
+  color: #fff !important;
+}
+
+/* Make sure links and text elements don't get unwanted backgrounds */
+a, p, span, i, em, strong {
+  background-color: transparent !important;
+}
+
+/* Keep footer text white but transparent background */
+.text-white {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+/* Fix social media icons to have transparent background */
+.btn-outline-primary.rounded-circle {
+  color: #A31F34 !important;
+  border-color: #A31F34 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary.rounded-circle:hover {
+  background-color: #A31F34 !important;
+  color: #fff !important;
+}
+
+/* Button styles with darker red */
+.btn-primary,
+.btn-primary:disabled {
+  background-color: #8B0000 !important; /* Darker red */
+  border-color: #8B0000 !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #6B0000 !important; /* Even darker for hover */
+  border-color: #6B0000 !important;
+  color: #fff !important;
+}
+
+/* Outline button styles */
+.btn-outline-primary {
+  color: #8B0000 !important;
+  border-color: #8B0000 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: #8B0000 !important;
+  border-color: #8B0000 !important;
+  color: #fff !important;
+}
+
+/* Back to top button */
+.back-to-top {
+  background-color: #8B0000 !important;
+  border-color: #8B0000 !important;
+}
+
+.back-to-top:hover {
+  background-color: #6B0000 !important;
+  border-color: #6B0000 !important;
+}
+
+/* Social media buttons */
+.btn-outline-primary.rounded-circle {
+  color: #8B0000 !important;
+  border-color: #8B0000 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary.rounded-circle:hover {
+  background-color: #8B0000 !important;
+  color: #fff !important;
+}
+
+/* Submit buttons in forms */
+button[type="submit"].btn-primary {
+  background-color: #8B0000 !important;
+  border-color: #8B0000 !important;
+}
+
+button[type="submit"].btn-primary:hover {
+  background-color: #6B0000 !important;
+  border-color: #6B0000 !important;
+}
+
+/* Base button styles */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #8B0000;          /* Darker red */
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    transition: color 0.15s ease-in-out,
+                background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out;
+}
+
+/* Primary button styles */
+.btn-primary {
+    color: #fff !important;
+    background-color: #8B0000 !important;    /* Darker red */
+    border-color: #8B0000 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    color: #fff !important;
+    background-color: #6B0000 !important;    /* Even darker red for hover */
+    border-color: #6B0000 !important;
+}
+
+/* Primary outline button */
+.btn-outline-primary {
+    color: #8B0000 !important;
+    border-color: #8B0000 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    color: #fff !important;
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+}
+
+/* Join Class button and other specific buttons */
+.btn.px-4,
+.back-to-top,
+button[type="submit"].btn-primary {
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+    color: #fff !important;
+}
+
+.btn.px-4:hover,
+.back-to-top:hover,
+button[type="submit"].btn-primary:hover {
+    background-color: #6B0000 !important;
+    border-color: #6B0000 !important;
+}
+
+/* Secondary button styles */
+.btn-secondary {
+    color: #fff !important;
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    color: #fff !important;
+    background-color: #6B0000 !important;
+    border-color: #6B0000 !important;
+}
+
+/* Secondary outline button */
+.btn-outline-secondary {
+    color: #8B0000 !important;
+    border-color: #8B0000 !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    color: #fff !important;
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+}
+
+/* Secondary solid button */
+.btn-secondary {
+    color: #fff !important;
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    color: #fff !important;
+    background-color: #6B0000 !important;
+    border-color: #6B0000 !important;
+}
+
+/* Ensure text remains readable on lighter background */
+.container-fluid.bg-secondary .text-white {
+    color: #333333 !important;  /* Dark gray text for contrast */
+}
+
+/* Update links in this section for better contrast */
+.container-fluid.bg-secondary a {
+    color: #8B0000 !important;  /* Dark red for links */
+}
+
+/* Footer text styles */
+.container-fluid.bg-secondary p,
+.container-fluid.bg-secondary .text-center {
+    color: #8B0000 !important;
+}
+
+/* Footer links should remain clickable and visible */
+.container-fluid.bg-secondary a {
+    color: #6B0000 !important;  /* Even darker for links */
+}
+
+.container-fluid.bg-secondary a:hover {
+    color: #8B0000 !important;
+}
+
+/* Keep the existing footer background */
+.container-fluid.bg-secondary {
+    background-color: #E5E5E5 !important;
 }
